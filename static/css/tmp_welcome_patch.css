@@ -1,0 +1,25 @@
+.brand.brand-dashboard { 
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 0.25rem; 
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background-clip: initial !important;
+    color: var(--text-primary) !important;
+}
+.brand.brand-dashboard .system-name {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--text-primary);
+}
+.brand.brand-dashboard .welcome-title {
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    letter-spacing: 0.01em;
+    text-transform: none;
+}
+@media (max-width: 768px) {
+    .brand.brand-dashboard .welcome-title { font-size: 1.25rem; text-align: center; }
+}

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ExpiryGuard - Smart Expiry Intelligence</title>
+
+<meta name="description" content="ExpiryGuard helps businesses monitor product expiration dates, reduce waste, and receive timely alerts before products expire.">
+
+<link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="/" class="logo">
+        <div class="logo-icon">🛡️</div>
+        <span>ExpiryGuard</span>
+    </a>
+
+    <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it Works</a></li>
+    </ul>
+
+    <div class="auth-buttons">
+        <a href="/login" class="login-btn">Login</a>
+        <a href="/signup" class="signup-btn">Sign Up</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+
+    <!-- Left Section -->
+    <div class="left-section">
+
+        <div class="tagline">
+            <div class="tagline-icon">✨</div>
+            Smart expiry intelligence for modern inventories
+        </div>
+
+        <h1 class="main-heading">
+            Never lose a product to
+            <span class="gradient-text">expired stock</span>
+            again.
+        </h1>
+
+        <p class="description">
+            ExpiryGuard tracks every product's shelf life, sends timely alerts to your team,
+            and gives you a real-time dashboard to act before items expire — cutting waste
+            and protecting revenue.
+        </p>
+
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+
+        <div class="inventory-card">
+
+            <div class="inventory-header">
+                <div class="inventory-title">
+                    <div class="inventory-icon">📦</div>
+                    Live Inventory
+                </div>
+
+                <div class="synced-badge">
+                    ✓ Synced
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-icon">🥛</div>
+
+                <div class="product-info">
+                    <div class="product-name">Greek Yogurt 500g</div>
+                    <div class="product-batch">Batch · #A5489</div>
+                </div>
+
+                <div class="product-expiry expiry-soon">
+                    ⏰ 2 Days
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-icon">🍞</div>
+
+                <div class="product-info">
+                    <div class="product-name">Whole Wheat Bread</div>
+                    <div class="product-batch">Batch · #A1878</div>
+                </div>
+
+                <div class="product-expiry expiry-ok">
+                    📅 5 Days
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-icon">🥛</div>
+
+                <div class="product-info">
+                    <div class="product-name">Almond Milk 1L</div>
+                    <div class="product-batch">Batch · #A6123</div>
+                </div>
+
+                <div class="product-expiry expiry-ok">
+                    📅 3 Weeks
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-icon">💊</div>
+
+                <div class="product-info">
+                    <div class="product-name">Vitamin C Tablets</div>
+                    <div class="product-batch">Batch · #A6347</div>
+                </div>
+
+                <div class="product-expiry expiry-warning">
+                    ⚠️ Expired
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+
+    <div class="cta-buttons">
+
+        <a href="/signup" class="cta-primary-btn">
+            <span>→</span>
+            Get Started Free
+        </a>
+
+        <a href="/login" class="cta-secondary-btn">
+            <span>→</span>
+            I Already Have an Account
+        </a>
+
+    </div>
+
+    <div class="features-list">
+
+        <div class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>Email Alerts</span>
+        </div>
+
+        <div class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>Bulk Import</span>
+        </div>
+
+        <div class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>No Card Required</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Stats Section -->
+<div class="stats-section">
+
+    <div class="stat-card">
+        <div class="stat-number">1,284</div>
+        <div class="stat-label">Tracked Products</div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-number">37</div>
+        <div class="stat-label">Expiring Soon</div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-number saved">$12K</div>
+        <div class="stat-label">Potential Savings</div>
+    </div>
+
+</div>
+
+<!-- Features Section -->
+<section class="features-section" id="features">
+
+    <div class="section-heading">
+
+        <h2 class="section-title">
+            Everything you need to
+            <span class="gradient-text">stay ahead</span>
+        </h2>
+
+        <p class="section-description">
+            Built for retailers, pharmacies, warehouses, supermarkets,
+            and kitchens that can't afford expired inventory.
+        </p>
+
+    </div>
+
+    <div class="features-grid">
+
+        <div class="feature-card">
+            <div class="feature-card-icon">🔔</div>
+            <h3 class="feature-card-title">Smart Alerts</h3>
+            <p class="feature-card-description">
+                Configurable thresholds notify the right people via email
+                and in-app notifications before products expire.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-card-icon">📅</div>
+            <h3 class="feature-card-title">Expiry Timeline</h3>
+            <p class="feature-card-description">
+                View products expiring today, this week,
+                and this month at a glance.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-card-icon">📊</div>
+            <h3 class="feature-card-title">Waste Analytics</h3>
+            <p class="feature-card-description">
+                Understand inventory losses and make
+                smarter purchasing decisions.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-card-icon">🔍</div>
+            <h3 class="feature-card-title">Searchable Catalog</h3>
+            <p class="feature-card-description">
+                Quickly find products by category,
+                supplier, batch number, or status.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-card-icon">📧</div>
+            <h3 class="feature-card-title">Team Notifications</h3>
+            <p class="feature-card-description">
+                Keep staff informed with automated
+                email notifications and reminders.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-card-icon">✅</div>
+            <h3 class="feature-card-title">Compliance Ready</h3>
+            <p class="feature-card-description">
+                Maintain proper records and generate
+                reports for audits and inspections.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Steps Section -->
+<section class="steps-section" id="how-it-works">
+
+    <div class="steps-heading">
+        <h2 class="steps-title">
+            Three Steps to a Leak-Proof Inventory
+        </h2>
+    </div>
+
+    <div class="steps-grid">
+
+        <div class="step-card">
+            <div class="step-number">01</div>
+
+            <h3 class="step-title">
+                Add Your Products
+            </h3>
+
+            <p class="step-description">
+                Import products from spreadsheets or add
+                them manually with expiry dates.
+            </p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">02</div>
+
+            <h3 class="step-title">
+                Configure Alerts
+            </h3>
+
+            <p class="step-description">
+                Decide when notifications should be sent
+                before products expire.
+            </p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">03</div>
+
+            <h3 class="step-title">
+                Take Action
+            </h3>
+
+            <p class="step-description">
+                Reduce waste by removing, discounting,
+                or redistributing products before expiry.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Footer CTA -->
+<section class="footer-cta-section">
+
+    <div class="footer-cta-content">
+
+        <h2 class="footer-cta-title">
+            Stop Guessing. Start Guarding.
+        </h2>
+
+        <p class="footer-cta-description">
+            Join organizations reducing inventory waste
+            with smart expiry management.
+        </p>
+
+        <div class="footer-cta-buttons">
+
+            <a href="/signup" class="footer-cta-primary-btn">
+                <span>👤</span>
+                Get Started
+            </a>
+
+            <a href="/login" class="footer-cta-secondary-btn">
+                <span>→</span>
+                Login
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const target = document.querySelector(
+                this.getAttribute('href')
+            );
+
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+```
+
+</body>
+</html>

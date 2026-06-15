@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Actions - ExpiryGuard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div class="container">
+        <header>
+            <div class="brand">SETTING</div>
+        </header>
+
+        <div class="section-header" style="margin: 2rem 0 1rem;">
+            <h2 class="section-title"><i class="fas fa-user-shield" style="color: var(--primary);"></i> Account Actions</h2>
+            <p style="color: var(--text-secondary); max-width: 680px; margin-top: 0.5rem;">
+                Manage your account separately from your other settings.
+            </p>
+            <a href="/settings" class="btn-secondary" style="display:inline-flex; align-items:center; gap:0.5rem; margin-top:1rem; width: auto;">
+                <i class="fas fa-arrow-left"></i>
+                Back to Settings
+            </a>
+        </div>
+
+        <div class="form-card" style="margin-bottom: 1.5rem;">
+            <h3 class="form-title"><i class="fas fa-sign-out-alt"></i> Logout</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                Sign out of your session securely.
+            </p>
+            <button class="btn-secondary" onclick="logout()" style="width: 100%;">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout
+            </button>
+        </div>
+
+        <div class="form-card">
+            <h3 class="form-title"><i class="fas fa-trash-alt"></i> Delete Account</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                Remove your account and all associated data.
+            </p>
+            <button class="btn-danger" onclick="deleteAccount()" style="width: 100%;">
+                <i class="fas fa-trash-alt"></i>
+                Delete Account
+            </button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/settings.js') }}"></script>
+</body>
+</html>
