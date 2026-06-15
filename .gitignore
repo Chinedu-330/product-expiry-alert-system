@@ -2,3 +2,22 @@
 venv/
 __pycache__/
 *.pyc
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.env
+
+# VS Code
+.vscode/
+
+# Database backups
+*.sql
+*.backup
+
+# Operating system files
+Thumbs.db
+.DS_Store
